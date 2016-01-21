@@ -1,0 +1,133 @@
+<!doctype html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css">
+<link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="masonry.css">
+
+
+
+
+<header class="masthead">
+   <p class="masthead-intro">We are the</p>
+   <h1 class="masthead-heading">Clarks</h1>
+</header>
+<main>
+  <section>
+    <h2>About the Site</h2>
+    <p>
+      This is just a personal site made for family members to keep in touch and see what's going on in each other's lives as well as a gift to my mother for mother's day.
+     </p>
+     <p>
+      What's important to me is keeping an open mind, experiencing new things, and creating projects that I enjoy and am proud of.
+    </p>
+  </section>
+  <section>
+    <h2>Where we are from</h2>
+    <p>
+      My mother and father previously lived in Bradford, Pennsylvania, then Fremont, Ohio, then Gibsonburg, Ohio. They currently reside in Oregon, Ohio and my sister and her husband live in Toledo and I in Perrysburg, Ohio.
+     </p>
+  </section>
+  <section>
+    <h2>The Family</h2>
+
+
+    <div id="container">
+
+		<div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/kels_wedding_01.jpg"><img src="images/kels_wedding_01.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/dad_kels_cycle.jpg"><img src="images/dad_kels_cycle.jpg"width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/kmd_zoo.jpg"><img src="images/kmd_zoo.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/kmm_bonn.jpg"><img src="images/kmm_bonn.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/kmm_skate.jpg"><img src="images/kmm_skate.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/md_boat.jpg"><img src="images/md_boat.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mm_wedd.jpg"><img src="images/mm_wedd.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mmk_skate.jpg"><img src="images/mmk_skate.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mom_dad_drinking.jpg"><img src="images/mom_dad_drinking.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mom_dad_newyears.jpg"><img src="images/mom_dad_newyears.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mom_dad_wedding.jpg"><img src="images/mom_dad_wedding.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mom_matt_dadbday.jpg"><img src="images/mom_matt_dadbday.jpg" width=240px></a>
+    </div>
+    <div class="masonryImage">
+      <a class="fancybox" rel="group" href="images/mtm_hallow.jpg"><img src="images/mtm_hallow.jpg" width=240px></a>
+    </div>
+
+	</div>
+
+  </section>
+  <section>
+  </br>
+  </br>
+  </section>
+</main>
+<footer class="content-footer">
+  <p>
+    For suggestions or comments contact me on these social networks:
+  </p>
+  <ul class="social">
+    <li><a href="https://github.com/mdclarkstur"><i class="fa fa-git fa-2x"></i></a></li>
+    <li><a href="http://twitter.com/mdclarkster"><i class="fa fa-twitter fa-2x"></i></a></li>
+    <li><a href="https://www.facebook.com/mdclarkster"><i class="fa fa-facebook fa-2x"></i></a></li>
+  </ul>
+  <p>Thanks for everything Mom.</p>
+</footer>
+
+
+<!-- Grab Google CDN's jQuery, fall back to local if offline -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+
+<!-- FancyBox -->
+  <script src="js/fancybox/jquery.fancybox.js"></script>
+  <script src="js/fancybox/jquery.fancybox-buttons.js"></script>
+  <script src="js/fancybox/jquery.fancybox-thumbs.js"></script>
+      <script src="js/fancybox/jquery.easing-1.3.pack.js"></script>
+  <script src="js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script src="http://designshack.net/tutorialexamples/masonry/jquery.masonry.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $(".fancybox").fancybox();
+    });
+  </script>
+  <script>
+     $(function(){
+
+       var $container = $('#container');
+
+       $container.imagesLoaded( function(){
+         $container.masonry({
+           itemSelector : '.masonryImage'
+         });
+       });
+
+     });
+   </script>
+
+</html>
